@@ -8,6 +8,116 @@ use float to make something locate itself on the right or left
 */
 
 body{
+    padding: 40px;
+    background-color: #02301f;
+}
+
+#main-title{
+    color: #ffffff;
+    font-family: "Times New Roman", Times, cursive;
+    text-align: center;
+    font-size: 5rem
+}
+/*This comment applies to #pslo h2, #courses h2, and #faculty h2
+In all three of these functions we changed the font, changed the font color,
+aligned the text in a variety of ways. For pslo and faculty we aligned
+the headers to the center and for courses we aligned it to the left.*/
+#pslo h2 {
+    font-family: fantasy;
+    color: red;
+    text-align: center;
+}
+#courses h2 {
+    font-family: sans-serif;
+    color: red;
+    text-align: left;
+}
+#faculty h2 {
+    font-family: fantasy;
+    color: red;
+    text-align: center;
+}
+/*In major-element ul we made it so the bullet points
+that are under the main bullet points under required courses
+are all grey and italic.*/
+.major-element ul{
+    font-style: italic;
+    color: darkslategray;
+}
+
+.section {
+    border-radius: 100px;
+    padding: 20px;
+    border: 10px solid;
+    margin: 0 0 50px 50px;
+    max-width: 1400px;
+
+}
+
+#pslo li{
+    font-size: 20px;
+}
+
+#courses {
+    background-color: lightskyblue;
+}
+
+#pslo {
+    background-color: greenyellow;
+}
+
+#faculty{
+    background-color: #000000
+}
+
+#faculty>ul>li {
+    display: inline-block;
+    font-family: sans-serif;
+    color:white;
     padding: 30px;
-    background-color: #ffffff;
+}
+
+#faculty-list {
+    padding-left: 20px
+}
+
+img.pic {
+    height: 150px;
+    border: 4px solid #ffffff;
+    border-radius: 500px;
+}
+
+#style ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#style li {
+    float: left; /*explore what happens if this is 'right' instead*/
+}
+
+#style li a {
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 14px 50px; /*this adds some spacing around the items in my style footer*/
+    text-decoration: underline;
+}
+
+
+#style li a:hover {
+    background-color: #000;
+}
+
+#style {
+    position: fixed;
+    background-color: lawngreen;;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 55px;
+    padding-top: 10px;
 }
