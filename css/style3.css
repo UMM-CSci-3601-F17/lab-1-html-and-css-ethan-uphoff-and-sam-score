@@ -7,7 +7,97 @@ use float to make something locate itself on the right or left
 
 */
 
+/* In body we added a background image
+("http://i.imgur.com/EUy4Wgs.png" & "http://imgur.com/gallery/Ur85P") to the webpage
+The parts we messed with: background-image
+ */
 body{
     padding: 30px;
-    background-color: #aaaaaa;
+    background-image: url("http://i.imgur.com/EUy4Wgs.png");
+}
+
+#main-title{
+    background-color: lightgray;
+    color: black;
+    font-family: monospace;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 5px 5px red;
+    opacity: 0.9;
+}
+
+/* In section we added rounded borders to specific corners
+and added color to specific sides of the borders. We made the background image
+visible through the sections using opacity.
+The parts we messed with: border-bottom-right-radius, border-bottom-left-radius, opacity
+ */
+.section {
+    padding: 20px;
+    margin: 0 0 50px 50px;
+    background-color: lightgray;
+    opacity: 0.9;
+    border: solid;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    border-right-color: red;
+    border-top-color: red;
+    border-bottom-color: red;
+    max-width: 800px;
+
+}
+
+
+/* In h2 we added a red background shadow and a red outline to all header texts
+The parts we messed with: text-shadow, outline
+ */
+h2 {
+    outline: red groove thin;
+    text-shadow: 1px 1px red;
+
+}
+
+img.pic {
+    height: 150px;
+    border: 4px solid red;
+    border-radius: 500px;
+}
+
+#style ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#style li {
+    float: left;
+}
+
+#style li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+#style li a:hover {
+    background-color: #000;
+}
+
+/* In style we fixed the style section to the bottom of the page
+The parts we messed with: position, bottom (position)
+ */
+#style {
+    background-color: black;
+    float: left;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 55px;
+    padding-top: 10px;
+
 }
